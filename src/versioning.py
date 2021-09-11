@@ -21,11 +21,11 @@ class GitControl:
         return "GitControl() " + self.stamp
 
     def __str__(self):
-        return self.    description()
+        return self.description()
 
     def description(self):
-        return """Current Repo State:\n > Branch:\t{b}\n > Label:\t{l}\n > Hash:\t{h}
-        """.format(b=self.branch, l=self.label, h=self.full_hash)
+        return """Current Repo State:\n > Branch:\t{b}\n > Label:\t{l}\n > Hash:\t{h}""".format(
+            b=self.branch, l=self.label, h=self.full_hash)
 
     @staticmethod
     def repo_current_label():
