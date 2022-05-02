@@ -6,4 +6,4 @@ def process_cmd(command: str, **kwargs):
 
     output = subprocess.check_output(subprocess_list, kwargs)
 
-    return output.decode('ascii').strip()
+    return output.decode("ascii").strip()
