@@ -25,6 +25,6 @@ jobs:
     - name: Flake8
       run: flake8 .
     - name: Black
-      run: black .
+      run: black -- check .
     - name: Pytest
       run: pytest .
